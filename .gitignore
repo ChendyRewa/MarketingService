@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Container
+container/node_modules/
+
+# auth
+auth/node_modules/
+
+#dashboard
+dashboard/node_modules/
+
+# marketing
+marketing/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
