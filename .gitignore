@@ -3,6 +3,7 @@ node_modules/
 
 # Container
 container/node_modules/
+container/dist/
 
 # auth
 auth/node_modules/
@@ -12,8 +13,9 @@ dashboard/node_modules/
 
 # marketing
 marketing/node_modules/
+marketing/dist/
 
-dist/
+
 
 # Logs
 logs/
