@@ -2,8 +2,11 @@ name: deply-container
 
 on:
   push:
-    branches: -main
-    paths: -'container/**'
+    branches:
+      - main
+    paths:
+      - 'container/**'
+  workflow_dispatch:
 
 defaults:
   run:
