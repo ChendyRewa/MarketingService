@@ -13,6 +13,8 @@ dashboard/node_modules/
 # marketing
 marketing/node_modules/
 
+dist/
+
 # Logs
 logs/
 *.log
