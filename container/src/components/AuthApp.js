@@ -16,7 +16,7 @@ export default ({ setIsSignedIn, isSignedIn }) => {
       },
       onSignIn: () => {
         setIsSignedIn(true);
-        history.push("/");
+        history.push("/dashboard");
       },
     });
 

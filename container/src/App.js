@@ -4,6 +4,7 @@ import Header from "./components/Header";
 
 const MarketingLazy = lazy(() => import("./components/MarketingApp"));
 const AuthLazy = lazy(() => import("./components/AuthApp"));
+const DashboardLazy = lazy(() => import("./components/DashboardApp"));
 export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
@@ -14,6 +15,13 @@ export default () => {
         <Switch>
           <Route path="/auth">
             <AuthLazy setIsSignedIn={setIsSignedIn} isSignedIn={isSignedIn} />
+          </Route>
+          <Route path="/dashboard">
+            {!isSignedIn ? (
+              <AuthLazy setIsSignedIn={setIsSignedIn} isSignedIn={isSignedIn} />
+            ) : (
+              <DashboardLazy />
+            )}
           </Route>
           <Route path="/">
             {isSignedIn ? (
